@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+	   <meta charset="utf-8">
+		   <title>la MUSIQUE</title>
+	       <link rel="stylesheet" href="style_thibault_saint-didier.css">
+	</head>
+	<body>
+
+	  <div id=menu>
+	  <ul id="navigation">
+             <li><a href="la_musique.html" title="aller à la section 1">ACCUEIL</a></li>
+             <li><a href="mecontacter.html" title="aller à la section 3">S'INSCRIRE</a></li>
+             <li><a href="plateforme.html" title="aller à la section 4">EN ECOUTER</a></li>
+      </ul>
+	  
+	  </div>
+	  
+	  <form>
+	  <ul id="formulaire" >
+        <label for="fname">Prénom:</label><br>
+		<input type="text" id="form" name="fname"><br>
+        <label for="lname">Nom:</label><br>
+        <input type="text" id="form" name="lname"><br>
+		<label for="adresse">Adresse:</label><br>
+		<input type="text" id="form" name="adresse"><br>
+		<label for="ville">Ville:</label><br>
+		<input type="text" id="form" name="ville"><br>
+		<label for="code_postal">Code postal:</label><br>
+		<input type="text" id="form" name="code_postal"><br>
+		<label for="date_de_naissance">Date de naissance:</label><br>
+		<input type="text" id="form" name="date_de_naissance"><br>
+		<label for="lieu_de_naissance">Lieu de naissance:</label><br>
+		<input type="text" id="form" name="lieu_de_naissance"><br>
+		<label for="mdp">Mot de Passe :</label><br>
+		<input type="text" id="form" name="mdp"><br>
+		<span id="aideMdp"></span>
+		<ul id="inscription">
+             <li><a href="inscription.html" title="aller à la section 1">ENVOYER</a></li>
+	    </ul>
+      </form>
+	  
+	  <HTML>
+<script>
+// Vérification de la longueur du mot de passe saisi
+document.getElementById("formulaire").addEventListener("input", function (e) {
+    var mdp = e.target.value; // Valeur saisie dans le champ mdp
+    var longueurMdp = "faible";
+    var couleurMsg = "red"; // Longueur faible => couleur rouge
+    if (mdp.length >= 10) {
+        longueurMdp = "suffisante";
+        couleurMsg = "green"; // Longueur suffisante => couleur verte
+    } else if (mdp.length >= 6) {
+        longueurMdp = "moyenne";
+        couleurMsg = "orange"; // Longueur moyenne => couleur orange
+    }
+    var aideMdpElt = document.getElementById("aideMdp");
+    aideMdpElt.textContent = "Longueur : " + longueurMdp; // Texte de l'aide
+    aideMdpElt.style.color = couleurMsg; // Couleur du texte de l'aide
+});
+
+</script>

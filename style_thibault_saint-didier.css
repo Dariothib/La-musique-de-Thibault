@@ -1,0 +1,94 @@
+body{
+	background-color: #000000;
+	
+}
+p
+{
+	margin-top: 2%;
+	font-size: 2em;
+	color: #FFFFFF;
+	text-align: center;
+	font: Comic Sans MS, Comic Sans, cursive;
+}
+h1
+{
+	width: 500px;
+	margin: auto;
+    border: 2px solid rgb(200,300,400);
+    border-radius: 50px;
+	border-width: 10px;
+	border-color: #FFFFFF;
+	font-size: 50px;
+	margin-top: 150px;
+	color: #FFFFFF;
+}
+
+ #navigation {
+	 display: inline-block ;
+	 margin-bottom: 50px;
+ }
+
+  #navigation li {
+  color: #000000 ;
+  background: #3A9D23 ;
+  }
+  
+  #navigation li a {
+  padding: 4px 20px ;
+  background: #3A9D23 ;
+  color: #000000;
+  border: 40px solid #600 ;
+  border-color: #3A9D23 ;
+  border-radius: 10px;
+  font: Arial Narrow, sans-serif;
+  font-size: 55px;
+  line-height: 1em ;
+  text-align: center ;
+  text-decoration: none 
+  }
+  
+  #navigation li a:hover, #navigation li a:focus, #navigation li a:active {
+  text-decoration: underline ;
+  }
+  
+  #navigation li {
+  float: left ;
+}
+#formulaire {
+	color: #000000 ;
+    background: #FFFFFF;
+    width: 500px;
+	margin: auto;
+    border: 2px solid rgb(100,200,300);
+    border-radius: 15px;
+	border-width: 7px;
+	border-color: #A5260A;
+	margin-top: 150px;
+	text-align: center;
+	font: Comic Sans MS, Comic Sans, cursive;
+	font-size: 35px;	
+}
+#form {
+	border: 3px solid rgb(20,40,60);
+	width:400px;
+	height: 30px;
+	margin-bottom: 20px;
+}
+b{
+	margin: 210px;
+}
+#inscription {
+
+  background: #3A9D23 ;
+  color: #000000;
+  border: 20px solid #600 ;
+  border-color: #3A9D23 ;
+  border-radius: 10px;
+  font: Arial Narrow, sans-serif;
+  font-size: 35px;
+  line-height: 1em ;
+  text-align: center ;
+  text-decoration: none
+}
+#mdp {
+	font-size: 30px;
